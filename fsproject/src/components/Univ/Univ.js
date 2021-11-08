@@ -124,19 +124,19 @@ catch(err){
                 value={this.state.cin} onChange={this.ChangeHandler4}/>
               </div>
               <div class="col">
-                <input type="date" class="form-control" name="birth_date" placeholder="Date_of_birth"
+                <input placeholder="Date_of_birth" type="text" onFocus={(e) => (e.currentTarget.type = "date")} onBlur={(e) => (e.currentTarget.type = "text")} class="form-control" name="birth_date"
                 value={this.state.birth_date} onChange={this.ChangeHandler5}/>
               </div>
               {/* <div class="col">
                 <input type="text" class="form-control" name="Scientific_discipline" placeholder="Scientific_discipline"/>
               </div> */}
               <div class="col">
-                <input type="date" class="form-control" name="year" 
-                placeholder="Diploma_issue_date" value={this.state.year} onChange={this.ChangeHandler6}/>
-              </div>
-              <div class="col">
                 <input type="text" class="form-control" 
                 name="Diploma" placeholder="Scientific_discipline" value={this.state.Diploma} onChange={this.ChangeHandler7}/>
+              </div>
+              <div class="col">
+                <input type="text" onFocus={(e) => (e.currentTarget.type = "date")} onBlur={(e) => (e.currentTarget.type = "text")} class="form-control" name="year" 
+                placeholder="Diploma_issue_date" value={this.state.year} onChange={this.ChangeHandler6}/>
               </div>
               <div class="col">
                 <input type="text" class="form-control" name="school" placeholder="Diploma_issued_by"
