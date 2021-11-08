@@ -9,3 +9,8 @@
     margin-left: 350px;
  
 }
+
+button.btn.btn-primary.mt-4:focus {
+    background-color: rgb(11 204 11);
+    color: black;
+}
